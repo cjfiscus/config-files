@@ -43,6 +43,7 @@ alias biocluster='ssh -XY -o ServerAliveInterval=30 cfisc004@biocluster.ucr.edu'
 alias ls='ls -GFh'
 alias ll='ls -ahl'
 alias less='less -S'
+alias nonascii="LC_CTYPE=C grep --color='auto' -n -P '[\x80-\xFF]'"
 
 ## iTerm 2 shell integration 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
