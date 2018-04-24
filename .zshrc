@@ -38,6 +38,7 @@ export PATH="$PATH:~/scripts"
 
 ## biocluster login 
 alias biocluster='ssh -XY -o ServerAliveInterval=30 cfisc004@biocluster.ucr.edu'
+alias bc='ssh -XY -o ServerAliveInterval=30 cfisc004@biocluster.ucr.edu'
 
 ## ls aliases 
 alias ls='ls -GFh'
