@@ -18,6 +18,11 @@ brew install R
 brew install tmux
 brew cask install iterm2
 
+## finish setup for neovim
+echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after
+    let &packpath = &runtimepath
+    source ~/.vimrc" > ~/.config/nvim/init.vim
+
 ## fix shell 
 chsh -s /bin/zsh
 
@@ -28,4 +33,10 @@ setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
+
+## install vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+
+
 
