@@ -13,10 +13,13 @@ brew install zsh
 brew install neovim
 brew install wget
 brew install git
-brew install python3
 brew install R
 brew install tmux
 brew cask install iterm2
+brew install coreutils
+brew install dos2unix
+brew install gzip
+brew install tldr
 
 ## finish setup for neovim
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after
@@ -38,5 +41,8 @@ done
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
-
+## other things
+# install google chrome
+# install anaconda
+# install coreutils
 
